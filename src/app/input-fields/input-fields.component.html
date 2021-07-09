@@ -1,0 +1,47 @@
+<head>
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous"
+  />
+</head>
+<div class="d-inline-flex flex-column p-5" style="float: center">
+  <h1 style="text-align: left">Create Note</h1>
+  <form>
+    <div class="form-group">
+      <label>Content:</label>
+      <textarea
+        class="form-control"
+        id="exampleFormControlTextarea1"
+        style="width: 300px; height: 150px"
+      ></textarea>
+    </div>
+    <div class="form-group">
+      <button type="submit" class="btn btn-primary" onclick="func()">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+
+
+<div class="d-inline-flex flex-column p-5" style="float: center">
+  <h1 style="text-align: center">Available Notes:</h1>
+  <table class="table">
+    <tbody>
+
+        <!-- put ng for -->
+      <tr>
+        <!-- <th scope="row">{{ Note ID }}</th>
+        <td>{{ note.body }}</td> -->
+
+        <th scope="row">Note ID</th>
+        <td>Note content</td>
+
+        <td><button class="btn btn-danger" onclick="onDelete(noteid)">Delete Note</button></td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
